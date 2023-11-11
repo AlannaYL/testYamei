@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 設定css路徑 -->
+  
+  <title>芽渼牙醫診所</title>
+  <script type="module" crossorigin src="/yaMeiProject/assets/back/appointment-list.75c43d71.js"></script>
+  <link rel="modulepreload" href="/yaMeiProject/assets/tailwind.517bfc7a.js">
+  <link rel="stylesheet" href="/yaMeiProject/assets/tailwind.5a1901b9.css">
+</head>
+
+<body>
+  <h1>看診清單</h1>
+
+  <label for="date">日期:</label>
+
+  <input type="date" name="" id="searchDate">
+
+
+  <table id="appointmentTable">
+    <tr>
+      <th class="border border-slate-300"></th>
+      <th class="border border-slate-300">姓名</th>
+      <th class="border border-slate-300">性別</th>
+      <th class="border border-slate-300">生日</th>
+      <th class="border border-slate-300  px-3">病歷</th>
+      <th class="border border-slate-300">看診狀態</th>
+    </tr>
+
+  </table>
+
+  <h1>叫號系統</h1>
+
+  <span>目前看診號碼</span>
+  <span class="num">0</span>
+
+  <input type="button" value="下一號"
+    class="nextBtn px-3 rounded-lg text-white bg-primary-300 hover:bg-primary-400 cursor-pointer">
+  <input type="button" value="歸零"
+    class="zeroBtn px-3 rounded-lg text-white bg-primary-300 hover:bg-primary-400 cursor-pointer">
+
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  
+</body>
+
+</html>
