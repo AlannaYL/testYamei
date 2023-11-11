@@ -1,4 +1,4 @@
-import"../tailwind.517bfc7a.js";axios.get("http://localhost:4000/Appointment").then(function(u){const c=u.data;console.log(c);function o(e){const t=document.querySelector(".inquireInfo");t.innerHTML=e}function n(e){return e.map(t=>`<div class="bg-white">
+import"../tailwind.88247cf9.js";axios.get("http://localhost:4000/Appointment").then(function(u){const c=u.data;console.log(c);function o(e){const t=document.querySelector(".inquireInfo");t.innerHTML=e}function n(e){return e.map(t=>`<div class="bg-white">
   <h3 class="bg-primary-300 text-center px-12 text-white">\u9810\u7D04\u8A0A\u606F</h3>
   <div class="bg-white p-3">
      <h4 class="text-center px-12 text-primary-300 ">\u75C7\u72C0</h4>
