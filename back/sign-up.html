@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="/yaMeiProject/assets/tailwind.94ea8753.css">
     <link rel="stylesheet" href="/yaMeiProject/assets/index.8d532a87.css">
   </head>
-
   <body>
     <!-- header -->
     <header id="header" class="fixed w-screen h-20 font-sanst border shadow-xl bg-white z-10 top-0">
@@ -119,51 +118,96 @@
     <div
       class="w-4/5 mx-auto flex flex-col items-center justify-center pt-32 pb-10"
     >
-      <p class="text-[28px] font-bold text-center mb-7">後台登入</p>
-      <form id="adminLogin-form" class="w-[356px]">
+      <p class="text-[28px] font-bold text-center mb-7">建立您的帳號</p>
+      <form id="signup-form" class="w-[356px]">
         <div class="relative mb-8">
           <label class="w-full">
             <input
+              id="email"
+              type="text"
               class="w-full h-12 pl-3.5 pt-5 border-0 border-b-[2.5px] border-[#657786] bg-primary-100 focus:outline-0 focus:border-[#1e4bd1]"
-              placeholder="請輸入帳號"
+              placeholder="請輸入email"
               required
             />
-            <span class="absolute top-0 left-3.5 text-sm font-[550]">帳號</span>
+            <div class="absolute top-0 left-3.5 text-sm">
+              <span class="font-[550]">帳號</span>
+              <span class="text-red-400 ml-0.5">*</span>
+            </div>
           </label>
         </div>
         <div class="relative mb-8">
           <label class="w-full">
             <input
+              id = "password"
+              type="password"
               class="w-full h-12 pl-3.5 pt-5 border-0 border-b-[2.5px] border-[#657786] bg-primary-100 focus:outline-0 focus:border-[#1e4bd1]"
               placeholder="請輸入密碼"
               required
             />
-            <span class="absolute top-0 left-3.5 text-sm font-[550]">密碼</span>
+            <div class="absolute top-0 left-3.5 text-sm">
+              <span class="font-[550]">密碼</span>
+              <span class="text-red-400 ml-0.5">*</span>
+            </div>
+          </label>
+        </div>
+        <div class="relative mb-8">
+          <label class="w-full">
+            <input
+              id="checkPassword"
+              type="password"
+              class="w-full h-12 pl-3.5 pt-5 border-0 border-b-[2.5px] border-[#657786] bg-primary-100 focus:outline-0 focus:border-[#1e4bd1]"
+              placeholder="請再輸入密碼"
+              required
+            />
+            <div class="absolute top-0 left-3.5 text-sm">
+              <span class="font-[550]">確認密碼</span>
+              <span class="text-red-400 ml-0.5">*</span>
+            </div>
+          </label>
+        </div>
+        <div class="relative mb-8">
+          <label class="w-full">
+            <input
+              id="name"
+              type="text"
+              class="w-full h-12 pl-3.5 pt-5 border-0 border-b-[2.5px] border-[#657786] bg-primary-100 focus:outline-0 focus:border-[#1e4bd1]"
+              placeholder="請輸入暱稱"
+              required
+            />
+            <div class="absolute top-0 left-3.5 text-sm">
+              <span class="font-[550]">暱稱</span>
+              <span class="text-red-400 ml-0.5">*</span>
+            </div>
+          </label>
+        </div>
+        <div class="relative mb-8">
+          <label class="w-full">
+            <input
+              id="phone"
+              type="text"
+              class="w-full h-12 pl-3.5 pt-5 border-0 border-b-[2.5px] border-[#657786] bg-primary-100 focus:outline-0 focus:border-[#1e4bd1]"
+              placeholder="請輸入手機號碼"
+              required
+            />
+            <div class="absolute top-0 left-3.5 text-sm">
+              <span class="font-[550]">手機</span>
+              <span class="text-red-400 ml-0.5">*</span>
+            </div>
           </label>
         </div>
         <button
-        type=""
-          class="w-full py-2 px-6 text-white text-xl font-bold mb-5 mt-[1.5rem] bg-primary-300 rounded-[50px] hover:bg-primary-400"
+          type="submit"
+          class="w-full py-2 px-6 mt-[1.5rem] text-white text-xl font-bold mb-5 bg-primary-300 rounded-[50px] hover:bg-primary-400"
         >
-          登入
+          註冊
         </button>
       </form>
       <div class="w-[356px]">
-        <div class="flex justify-end">
-          <a
-            class="block mr-3.5 text-blue-600 text-center underline decoration-2"
-            href="./login.html"
-          >
-            前台登入
-          </a>
-          <span class="mr-3.5">&bull;</span>
-          <a
-            class="block text-blue-600 text-center underline decoration-2"
-            href="./sign-up.html"
-          >
-            註冊
-          </a>
-        </div>
+        <a
+          class="block w-full text-blue-600 text-center underline decoration-2"
+          href="./login.html"
+          >登入</a
+        >
       </div>
     </div>
 
@@ -221,6 +265,9 @@
     </div>
   </div>
 </footer>
+
+    <!-- 載入auth.js -->
+    <!-- <script type="module" src="../../api/auth.js"></script> -->
 
     <!-- 載入main.js -->
       
