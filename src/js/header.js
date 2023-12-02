@@ -13,39 +13,40 @@ function closeDisplayToggle() {
   links.style.width = '0vw'
 }
 
-// menu點擊事件
-menu.addEventListener('click', menuDisplayToggle)
-close.addEventListener('click', closeDisplayToggle)
-
-let preScroll = window.scrollY
-
 const header = document.querySelector('#header')
-const newsBox = document.querySelector('.news-box')
-let isNavbarVisible = false
+let prevScrollPos = window.scrollY
 
-window.onscroll = () => {
-  const currentScrollPos = window.scrollY
+const scrollChange = () => {
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.scrollY
 
-  // 滾動方向
-  if (preScroll > currentScrollPos) {
-    isNavbarVisible = true
-  } else {
-    isNavbarVisible = false
-  }
+    if (prevScrollPos > currentScrollPos) {
+      // 向上滾動，顯示導航欄
+      header.style.top = '0'
+    } else {
+      // 向下滾動，隱藏導航欄
+      header.style.top = '-85px'
+    }
 
-  // 顯示或隱藏
-  if (isNavbarVisible) {
+    prevScrollPos = currentScrollPos
+  })
+
+  // 頁面載入時顯示導航欄
+  window.addEventListener('DOMContentLoaded', () => {
     header.style.top = '0'
-  } else {
-    header.style.top = '-85px' // 隱藏
-  }
-
-  preScroll = currentScrollPos
-
-  const newsBoxTop = newsBox.offsetTop
-  const scrollRange = 20 // 範圍
-  if (currentScrollPos >= newsBoxTop && currentScrollPos <= newsBoxTop + scrollRange && preScroll <= currentScrollPos) {
-    header.style.top = '0'
-    preScroll = currentScrollPos
-  }
+  })
 }
+
+// heder全部內容一次打包導出
+const headers = {
+  menu,
+  links,
+  close,
+  header,
+  prevScrollPos,
+  menuDisplayToggle,
+  closeDisplayToggle,
+  scrollChange
+}
+
+export default headers
