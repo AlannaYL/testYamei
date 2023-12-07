@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 設定css路徑 -->
-  <!-- <link rel="stylesheet" href="/src/css/tailwind.css"> -->
+  
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   
   <title>芽渼牙醫診所</title>
-  <script type="module" crossorigin src="/yaMeiProject/assets/main.95a8bfcf.js"></script>
-  <link rel="stylesheet" href="/yaMeiProject/assets/main.7efd6ef7.css">
+  <script type="module" crossorigin src="/yaMeiProject/assets/main.deda615f.js"></script>
+  <link rel="stylesheet" href="/yaMeiProject/assets/main.4c4a6362.css">
+  <link rel="stylesheet" href="/yaMeiProject/assets/tailwind.d882e712.css">
   <link rel="stylesheet" href="/yaMeiProject/assets/index.8d532a87.css">
 </head>
 
@@ -25,15 +26,15 @@
       <ul class="w-[799px]  flex-row items-center justify-between gap-2 font-sans text-xl font-semibold hidden xl:flex">
         <li class="relative group">
           <span class="block absolute w-[82px] h-3 group-hover:bg-accent-100 top-4 z-[-1]"></span>
-          <a class="z-10" href="#">診所介紹</a>
+          <a class="z-10" href="../../src/pages/front/index.html">診所介紹</a>
         </li>
         <li class="relative group">
           <span class="block absolute w-[82px] h-3 group-hover:bg-accent-100 top-4 z-[-1]"></span>
-          <a href="#">服務項目</a>
+          <a href="../../src/pages/front/clinic-intro.html">服務項目</a>
         </li>
         <li class="relative group">
           <span class="block absolute w-[82px] h-3 group-hover:bg-accent-100 top-4 z-[-1]"></span>
-          <a href="#">醫護團隊</a>
+          <a href="../../src/pages/front/medical-team.html">醫護團隊</a>
         </li>
         <li class="relative group">
           <span class="block absolute w-[82px] h-3 group-hover:bg-accent-100 top-4 z-[-1]"></span>
@@ -113,7 +114,7 @@
       <div class="news-title text-center mb-10 md:flex flex-col items-center lg:items-baseline lg:mb-4">
         <h2 class="title-font mb-2">最新消息</h2>
         <span class="E-font lg:mb-32">News</span>
-        <div class="doc hidden lg:block"><img src="/yaMeiProject/assets/Doctors 1.fb4592aa.png"></div>
+        <div class="doc hidden xl:block"><img src="/yaMeiProject/assets/Doctors 1.fb4592aa.png"></div>
       </div>
       <div class="news-items">
         <div class="content w-96 border-t-16 border-t-primary-300 rounded-tr-lg rounded-tl-lg">
@@ -185,42 +186,42 @@
         <img src="/yaMeiProject/assets/rdesign_14813 1.6f80c474.png" alt="">
       </div>
       <div class="treatment-name">一般牙科</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#one" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
     <div class="review-card bg-white flex flex-col items-center justify-center">
       <div class="treatment-pic">
         <img src="/yaMeiProject/assets/rdesign_14813 2.ded3b146.png" alt="">
       </div>
       <div class="treatment-name">兒童牙科</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#two" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
     <div class="review-card bg-white flex flex-col items-center justify-center">
       <div class="treatment-pic">
         <img src="/yaMeiProject/assets/rdesign_14813 3.10381470.png" alt="">
       </div>
       <div class="treatment-name">牙齒矯正</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#three" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
     <div class="review-card bg-white flex flex-col items-center justify-center">
       <div class="treatment-pic">
         <img src="data:image/png;base64,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" alt="">
       </div>
       <div class="treatment-name">美容牙科</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#four" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
     <div class="review-card bg-white flex flex-col items-center justify-center">
       <div class="treatment-pic">
         <img src="/yaMeiProject/assets/rdesign_14813 5.769e5c72.png" alt="">
       </div>
       <div class="treatment-name">人工植牙</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#five" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
     <div class="review-card bg-white flex flex-col items-center justify-center">
       <div class="treatment-pic">
         <img src="data:image/png;base64,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" alt="">
       </div>
       <div class="treatment-name">其他診療項目</div>
-      <div class="btn font-semibold text-center">查看更多</div>
+      <a href="#six" class="btn font-semibold text-center cursor-pointer">查看更多</a>
     </div>
   </div>
 </div>
