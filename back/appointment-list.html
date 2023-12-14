@@ -7,10 +7,10 @@
   <!-- 設定css路徑 -->
   
   <title>芽渼牙醫診所</title>
-  <script type="module" crossorigin src="/yaMeiProject/assets/back/appointment-list.c1f8db17.js"></script>
-  <link rel="modulepreload" href="/yaMeiProject/assets/main.c0f76cfe.js">
-  <link rel="stylesheet" href="/yaMeiProject/assets/main.82d9e2db.css">
-  <link rel="stylesheet" href="/yaMeiProject/assets/tailwind.33cf6e6b.css">
+  <script type="module" crossorigin src="/yaMeiProject/assets/back/appointment-list.1132fa9d.js"></script>
+  <link rel="modulepreload" href="/yaMeiProject/assets/main.c53b85db.js">
+  <link rel="stylesheet" href="/yaMeiProject/assets/main.c09f5af6.css">
+  <link rel="stylesheet" href="/yaMeiProject/assets/tailwind.f3ad5751.css">
 </head>
 
 <body>
@@ -25,7 +25,8 @@
   <input type="date" name="" id="searchDate" class="pl-8">
   </div> 
   
-  <table id="appointmentTable" class="w-full">
+  <table class="w-full">
+    <thead>
     <tr>
       <th class="border border-slate-300 w-1/12"></th>
       <th class="border border-slate-300 w-2/12">姓名</th>
@@ -34,7 +35,8 @@
       <th class="border border-slate-300  px-3 w-2/12">病歷</th>
       <th class="border border-slate-300 w-3/12">看診狀態</th>
     </tr>
-
+  </thead>
+  <tbody id="appointmentTable" ></tbody>
   </table>
   <div class="border-b-4 border-primary-300 my-20 ">
   <span class=" bg-primary-300 px-6 text-white text-2xl font-black rounded-t-lg">叫號系統</span>
