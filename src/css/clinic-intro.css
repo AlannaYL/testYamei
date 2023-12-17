@@ -164,7 +164,7 @@ overflow: hidden;
     width: 100%;
   }
 
-  .time-point1 {
+  /* .time-point1 {
     width: 80px;
     height: 80px;
     right:5%;
@@ -197,7 +197,7 @@ overflow: hidden;
     height: 80px;
     right:0%;
     top:23%;
-  }
+  } */
 
 
 }
@@ -331,7 +331,7 @@ overflow: hidden;
  
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .banner .container .sologan {
     max-width: calc(648px * 0.75);
   }
@@ -392,35 +392,35 @@ overflow: hidden;
     width: 80px;
     height: 80px;
     right:15%;
-    top:7%;
+    top:5.8%;
   }
 
   .time-point2 {
     width: 80px;
     height: 80px;
     right:15%;
-    top:28%;
+    top:26%;
   }
 
   .time-point3 {
     width: 80px;
     height: 80px;
     right:11%;
-    top:22%;
+    top:24%;
   }
 
   .time-point4 {
     width: 80px;
     height: 80px;
     right:13.75%;
-    top:24%;
+    top:21%;
   }
 
   .time-point5 {
     width: 80px;
     height: 80px;
     right:0%;
-    top:23%;
+    top:21%;
   }
 }
 
@@ -448,6 +448,7 @@ overflow: hidden;
 
 
   .envi-items {
+    /* width: 1440px; */
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -484,7 +485,7 @@ overflow: hidden;
   .pics {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1800px;
+    width: 1440px;
   }
 
   .img {
@@ -493,11 +494,12 @@ overflow: hidden;
     object-fit: cover;
     overflow: hidden;
   }
+
   
   .Diagnosis {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1600px;
+    /* width: 1600px; */
   }
 
   .step {
@@ -534,7 +536,7 @@ overflow: hidden;
   .time-point1 {
     width: 80px;
     height: 80px;
-    right:5%;
+    right:5.5%;
     top:-12%;
   }
 
@@ -542,21 +544,21 @@ overflow: hidden;
     width: 80px;
     height: 80px;
     right:-12%;
-    top:24.2%;
+    top:25.2%;
   }
 
   .time-point3 {
     width: 80px;
     height: 80px;
     right:-17%;
-    top:29.2%;
+    top:21%;
   }
 
   .time-point4 {
     width: 80px;
     height: 80px;
     right:-17%x;
-    top:22%;
+    top:24%;
   }
 
   .time-point5 {
