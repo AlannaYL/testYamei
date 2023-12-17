@@ -315,8 +315,32 @@
 
         </div>
       </div>
+      <!-- 聊天室按鈕 -->
+      <div class="open-chat-btn w-[72px] h-[72px] fixed top-1/2 right-2 z-50" onclick="toggleChat()">  
+        <button class="transition-transform transform hover:scale-110" onclick="sendMessage()">
+          <img src="../../../public/images/chat-button.png" alt="">
+        </button>
+      </div>
+      <!-- 聊天室 -->
+      <div class="chatroom w-[375px] h-[660px] bg-white rounded-tl-[12px] rounded-tr-[12px] border fixed bottom-[-660px] right-[27.5px] xl:right-[75px]  shadow-primary-400 shadow-md">
+        <div class="chat-head h-[56px] bg-primary-300 relative  flex items-center justify-center rounded-tl-[12px] rounded-tr-[12px] shadow-md">
+          <h6 class="head-title">芽渼牙醫診所</h6>
+          <button class="close-btn flex items-center justify-center absolute top-[20px] right-[20px]" onclick="toggleChat()">
+            <img src="../../../public/images/Vector.png" alt="">
+          </button>
+        </div>
+        <!-- 聊天訊息 -->
+        <div class="chat-messages h-[524px] p-[16px]">
+          
+        </div>
+        <!-- 輸入框 -->
+        <div class="input-box w-[343px] h-[40px] border-[#E0E0E0] border-[1px] rounded-full absolute bottom-[20px] right-[16px] flex items-center justify-between px-[16px] py-[10px]">
+          <input type="text" placeholder="請輸入訊息" class="enterMessage w-[288px] h-[20px]">
+          <button onclick="sendMessage()"><img src="../../../public/images/search.png" alt=""></button>
+        </div>
+      </div>
       <%- include('public/layouts/footer.ejs') %>
-
+      <script src="../../js/chatroom.js"></script>
         <!-- 載入main.js -->
         <script type="module" src="../../../main.js"></script>
 
